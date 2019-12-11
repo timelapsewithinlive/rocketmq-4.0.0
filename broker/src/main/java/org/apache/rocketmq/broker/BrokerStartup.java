@@ -43,6 +43,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BrokerStartup {
+    static {
+        System.setProperty("user.home","F:\\");
+    }
     public static Properties properties = null;
     public static CommandLine commandLine = null;
     public static String configFile = null;
